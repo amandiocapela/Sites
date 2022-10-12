@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Baronessa;
+    src: url(../Fonts/Baronessa.otf);
+}
+
+@font-face {
+    font-family: Mikado;
+    src: url(../Fonts/Mikado\ Light.otf);
+}
+
+body{
+    font-family: Mikado;
+    background-color: #bae0e8;
+    width: 97%;
+    margin: auto;
+}
+
+header{
+   position: sticky;
+   top: 0;
+   height: 200px;
+   margin: auto;
+}
+
+.logo{
+    position: relative;
+    background-color: white;
+    height: 115px;
+}
+
+.logoTop{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logoTopIn{
+    height: 115px;
+}
+
+.menu{
+    position: relative;
+    background-color: #edcecb;
+    height: 85px;
+    text-align: center;
+}
+
+.ulMenu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+}
+
+.liMenu{
+    font-family: Baronessa;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+}
+
+.linkMenu{
+    color: #777777;
+    text-decoration: none;
+}
+
+.linkMenu:hover{
+    color: #adadad;
+}
+
+#home, #servicos, #estrutura, #contato{
+    padding-top: 250px;
+    margin-top: -250px;
+}
+
+.container{
+    background-color: white;
+    margin: auto;
+    padding-top: 0;
+}
+
+.whatsapp{
+    border: 5px solid #6bca56;
+    background-color: #6bca56;
+    border-radius: 7px;
+    width: 180px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ulWhatsapp{
+    list-style: none;
+    text-align: center;
+}
+
+.liWhatsapp{  
+    color: white;
+}
+
+.liWhatsapp:hover{
+    color: #ffffffd7;
+}
+
+h3{
+    font-family: Baronessa;
+    color: #777777;
+    margin-left: 10px;
+}
+
+h4{
+    color: #777777;
+    margin-left: 10px;
+}
+
+hr{
+    width: 80%;
+    margin: auto;
+}
+
+.imageAboutIn{
+    border-radius: 20%;
+    height: 250px;
+    margin: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.ulAbout{
+    list-style: inside;
+    list-style-image: url(../Assets/ÍconeLI.png);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.imageServices{
+    text-align: center;
+}
+
+.servicesText{
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.imageServicesPuericulturaIn{
+    border-radius: 20%;
+    float: none;
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.imageConsultaPreNatalIn{
+    border-radius: 20%;
+    float: none;
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.imageServicesSalaDePartoIn{
+    border-radius: 20%;
+    float: none;
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.estrutura{
+    border-radius: 10%;
+    float: none;
+    height: 150px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.contato{
+    text-align: center;
+}
+
+.socialIcons{
+    width: 40px;
+}
+
+.dev1{
+    color: rgb(54, 54, 179);
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.dev2{
+    color: rgb(54, 54, 179);
+    text-align: center;
+    font-size: 0.8em;
+}
+
+@media screen and (min-width: 1180px) {
+    body{
+        width: 1180px;
+    }  
+
+    header{
+        position: sticky;
+        top: 0;
+        height: 210px;
+        margin: auto;
+     }
+
+     .logo{
+        position: relative;
+        background-color: white;
+        height: 170px;
+    }
+    
+    .logoTop{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logoTopIn{
+        height: 170px;
+    }
+
+    .menu{
+        position: relative;
+        background-color: #edcecb;
+        height: 40px;
+        text-align: none;
+    }
+
+    .ulMenu{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+    }
+
+    .liMenu{
+        text-decoration: none;
+        color: #777777;
+        float: left;
+        margin-left: 25px;
+        font-size: 1.3em;
+    }
+
+    .whatsapp{
+        left: 70%;
+    }
+
+    .imageAboutIn{
+        float: left;
+        height: 380px;
+        margin-left: 10px;
+    } 
+
+    .liAbout{
+        margin-left: 390px;
+    }
+
+    .imageServicesPuericultura, .imageConsultaPreNatal, .imageServicesSalaDeParto{
+        height: 250px;
+    }
+
+    .imageConsultaPreNatalIn{
+        height: 250px;
+        float: left;
+    }
+
+    .imageServicesPuericulturaIn, .imageServicesSalaDePartoIn{
+        height: 250px;
+        float: right;
+    }
+
+    .servicesQdE{
+        width: 1000px;
+        text-align: justify;
+    }
+
+    .servicesQdD{
+        margin-left: 300px;
+        width: 1000px;
+        text-align: justify;
+    }
+
+    .estrutura{
+        height: 350px;
+    }
+}
+
+
+
